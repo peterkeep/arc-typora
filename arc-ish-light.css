@@ -1,5 +1,5 @@
 :root {
-    --side-bar-bg-color: #BAC3CF;
+    --side-bar-bg-color: #E7E8EB;
 		--side-bar-text-color: #2F343F;
     --window-border: #282C34;
     --search-select-bg-color: #575c61;
@@ -263,19 +263,23 @@ mark {
 }
 
 td, th {
-    border: 1px solid;
-    padding-left: 1ch;
-    padding-right: 1ch;
+    padding-left: 2ch;
+    padding-right: 2ch;
 }
 
 /*table tr[cid]:first-child > td {
     border-top: 3px double;
 }*/
 
+table {
+  border-bottom: 2px solid var(--text-color);
+}
+
 th {
-    border-bottom: 0;
-    padding-top: 2px;
-    background: var(--light-blue);
+    border-top: 2px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color)!important;
+    padding-top: 6px;
+    padding-bottom: 1px;
     border-color: var(--text-color);
     color: var(--text-color);
 }
@@ -340,7 +344,7 @@ blockquote {
     font-style: italic;
     padding: 0.25em 24px;
     position: relative;
-    color: var(--light-blue);
+    color: var(--blue);
     border-left: 2px solid;
 
 }
@@ -362,6 +366,10 @@ blockquote {
 
 .md-header {
     font-size: inherit !important;
+}
+
+.show-footer footer.ty-footer {
+  border-color: var(--bg-color)
 }
 
 /* .btn-default {

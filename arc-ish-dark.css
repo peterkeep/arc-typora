@@ -262,19 +262,23 @@ mark {
 }
 
 td, th {
-    border: 1px solid;
-    padding-left: 1ch;
-    padding-right: 1ch;
+    padding-left: 2ch;
+    padding-right: 2ch;
 }
 
 /*table tr[cid]:first-child > td {
     border-top: 3px double;
 }*/
 
+table {
+  border-bottom: 2px solid var(--text-color);
+}
+
 th {
-    border-bottom: 0;
-    padding-top: 2px;
-    background: var(--dark-blue);
+    border-top: 2px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color)!important;
+    padding-top: 6px;
+    padding-bottom: 1px;
     border-color: var(--text-color);
     color: var(--text-color);
 }
@@ -373,6 +377,10 @@ blockquote {
     background: var(--text-color);
     color: var(--bg-color);
     display: block;
+}
+
+.show-footer footer.ty-footer {
+  border-color: var(--bg-color)
 }
 
 /*blockquote:before {
