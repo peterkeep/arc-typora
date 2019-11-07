@@ -17,6 +17,7 @@
     --yellow: #FFC83F;
     --light-yellow: #FEEF6D;
     --gray: #666A74;
+    --black: #282C34;
 }
 
 @include-when-export url('./arc-ish/latinmodern-mono-light.css');
@@ -281,6 +282,7 @@ th {
     padding-bottom: 1px;
     border-color: var(--text-color);
     color: var(--text-color);
+    background-color: var(--black);
 }
 
 pre.md-meta-block {
