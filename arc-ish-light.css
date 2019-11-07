@@ -17,6 +17,9 @@
     --light-yellow: #FEEF6D;
     --gray: #666A74;
     --light-gray: #BAC3CF;
+    --black: #282C34;
+    --white: #E7E8EB;
+    --green: #16C98D;
 }
 
 @include-when-export url('./arc-ish/latinmodern-mono-light.css');
@@ -219,7 +222,7 @@ a.md-toc-inner {
 }
 
 .cm-s-typora-default .cm-code, .cm-s-typora-default .cm-comment {
-    color: var(--yellow);
+    color: var(--light-red);
     font-family: var(--monospace);
 }
 
@@ -260,7 +263,7 @@ sup.md-footnote {
 }
 
 mark {
-    background: var(--yellow);
+    background: var(--light-red);
 }
 
 td, th {
@@ -372,6 +375,12 @@ blockquote {
 
 .show-footer footer.ty-footer {
   border-color: var(--bg-color)
+}
+
+.CodeMirror-wrap .CodeMirror-code pre {
+    border-right: none;
+    background: var(--bg-color);
+    width: auto;
 }
 
 /* .btn-default {

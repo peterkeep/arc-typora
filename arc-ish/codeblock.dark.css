@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/** code highlight */
+
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-property {
+    color: var(--light-gray);
+}
+
+.cm-s-inner .cm-keyword {
+    color: var(--light-red);
+}
+
+.cm-s-inner .cm-tag {
+    color: var(--green);
+}
+
+.cm-s-inner .cm-attribute {
+    color: var(--blue);
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--light-gray);
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string {
+    color: var(--light-red);
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: var(--yellow);
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+    color: var(--blue);
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: var(--green);
+}
+
+.cm-s-inner .cm-hr {
+    color: var(--white);
+}
+
+.cm-s-inner .cm-link {
+    color: var(--white);
+}
+
+.cm-s-inner .cm-negative {
+    color: var(--red);
+}
+
+.cm-s-inner .cm-positive {
+    color: var(--light-green);
+}
+
+.cm-s-inner .cm-string-2 {
+    color: var(--yellow);
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: var(--light-gray);
+}
+
+.cm-s-inner .cm-builtin {
+    color: var(--light-yellow);
+}
+
+.cm-s-inner .cm-bracket {
+    color: var(--blue);
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: var(--light-blue);
+}
+
+.cm-s-inner .cm-number {
+    color: #64AB8F;
+}
+
+.cm-s-inner .cm-variable {
+    color: var(--light-gray);
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: var(--light-blue);
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: var(--green);
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: var(--blue);
+    color: var(--white)!important;
+    text-shadow: none;
+}
+
+.CodeMirror-gutters {
+    border-right: none;
+}

@@ -8,9 +8,9 @@ Some of the style has been lifted from the [Academic](https://theme.typora.io/th
 
 ## Screenshot
 
-![](https://github.com/peterkeep/arc/raw/master/arc-screenshot-light.png)
+![](https://github.com/peterkeep/arc/raw/master/arc-ish-light.png)
 
-![](https://github.com/peterkeep/arc/raw/master/arc-screenshot-dark.png)
+![](https://github.com/peterkeep/arc/raw/master/arc-ish-dark.png)
 
 ## Installation
 

@@ -1,3 +1,7 @@
+@import "./arc-ish/codeblock.dark.css";
+@import "./arc-ish/sourcemode.dark.css";
+
+
 :root {
     --side-bar-bg-color: #2F343F;
 		--side-bar-text-color: #BAC3CF;
@@ -9,6 +13,7 @@
     --item-hover-text-color: #E7E8EB;
     --bg-color: #2F343F;
     --text-color: #E7E8EB;
+
     --red: #CC575D;
     --light-red: #D7787D;
     --dark-blue: #2f4f75;
@@ -16,11 +21,16 @@
     --light-blue: #8ABEE5;
     --yellow: #FFC83F;
     --light-yellow: #FEEF6D;
+    --green: #16C98D;
+    --light-green: #72D5A3;
     --gray: #666A74;
     --black: #282C34;
+    --white: #E7E8EB;
+    --light-gray: #BAC3CF;
 }
 
 @include-when-export url('./arc-ish/latinmodern-mono-light.css');
+
 
 html {
     font-size: 12pt;
@@ -219,7 +229,7 @@ a.md-toc-inner {
 }
 
 .cm-s-typora-default .cm-code, .cm-s-typora-default .cm-comment {
-    color: var(--yellow);
+    color: var(--red);
     font-family: var(--monospace);
 }
 
@@ -259,7 +269,7 @@ sup.md-footnote {
 }
 
 mark {
-    background: var(--yellow);
+    background: var(--red);
 }
 
 td, th {
