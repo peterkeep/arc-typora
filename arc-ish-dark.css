@@ -1,19 +1,7 @@
 @import "./arc-ish/codeblock.dark.css";
 @import "./arc-ish/sourcemode.dark.css";
 
-
 :root {
-    --side-bar-bg-color: #2F343F;
-		--side-bar-text-color: #BAC3CF;
-    --window-border: #282C34;
-    --search-select-bg-color: #575c61;
-    --active-file-bg-color: #4084D6;
-    --active-file-text-color: #2F343F;
-    --item-hover-bg-color: #666A74;
-    --item-hover-text-color: #E7E8EB;
-    --bg-color: #2F343F;
-    --text-color: #E7E8EB;
-
     --red: #CC575D;
     --light-red: #D7787D;
     --dark-blue: #2f4f75;
@@ -27,6 +15,17 @@
     --black: #282C34;
     --white: #E7E8EB;
     --light-gray: #BAC3CF;
+
+    --side-bar-bg-color: #2F343F;
+		--side-bar-text-color: #BAC3CF;
+    --window-border: #282C34;
+    --search-select-bg-color: #575c61;
+    --active-file-bg-color: #282C34;
+    --active-file-text-color: #8ABEE5;
+    --item-hover-bg-color: #666A74;
+    --item-hover-text-color: #E7E8EB;
+    --bg-color: #2F343F;
+    --text-color: #E7E8EB;
 }
 
 @include-when-export url('./arc-ish/latinmodern-mono-light.css');
@@ -127,7 +126,7 @@ html {
 }
 
 a, a:visited {
-    color: var(--red);
+    color: var(--light-blue);
 }
 
 hr {
@@ -380,15 +379,24 @@ blockquote {
 }
 
 .md-rawblock-control:not(.md-rawblock-tooltip) {
-    background: var(--text-color);
-    color: var(--bg-color);
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .md-rawblock-on-edit>.md-rawblock-tooltip, .md-rawblock:hover>.md-rawblock-container, .md-rawblock:hover>.md-rawblock-tooltip {
     transition: background .5s linear;
-    background: var(--text-color);
-    color: var(--bg-color);
+    background: var(--bgcolor);
+    color: var(--text-color);
     display: block;
+}
+
+.md-inline-math script {
+    color: var(--blue);
+}
+
+.md-meta {
+    display: none;
+    color: var(--red);
 }
 
 .show-footer footer.ty-footer {

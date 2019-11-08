@@ -3,14 +3,15 @@
 		--side-bar-text-color: #2F343F;
     --window-border: #282C34;
     --search-select-bg-color: #575c61;
-    --active-file-bg-color: #4084D6;
-    --active-file-text-color: #2F343F;
+    --active-file-bg-color: #BAC3CF;
+    --active-file-text-color: #2f4f75;
     --item-hover-bg-color: #666A74;
     --item-hover-text-color: #E7E8EB;
     --bg-color: #E7E8EB;
     --text-color: #000000;
     --red: #702f32;
     --light-red: #CC575D;
+    --dark-blue: #2f4f75;
     --blue: #4084D6;
     --light-blue: #8ABEE5;
     --yellow: #FFC83F;
@@ -119,7 +120,7 @@ html {
 }
 
 a, a:visited {
-    color: var(--red);
+    color: var(--dark-blue);
 }
 
 hr {
@@ -371,6 +372,15 @@ blockquote {
 
 .md-header {
     font-size: inherit !important;
+}
+
+.md-inline-math script {
+    color: var(--red);
+}
+
+.md-meta {
+    display: none;
+    color: var(--blue);
 }
 
 .show-footer footer.ty-footer {
